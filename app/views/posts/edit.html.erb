@@ -1,3 +1,22 @@
+
+<h3>Post Edit Form</h3>
+
+<%= form_for(@post) do |f|%>
+
+<div>
+
+<%= f.label "Post Title" %>
+<%= f.text_field :title%><br>
+
+<%= f.label 'Post Description:' %>
+<%= f.text_area :description%>
+</div>
+
+<%= f.submit "Update Post" %>
+
+<% end %>
+
+<style>/*
 <h3>Post Form</h3>
 
 <%= form_tag post_path(@post), method: "put" do %>
@@ -9,3 +28,4 @@
   
   <%= submit_tag "Submit Post" %>
 <% end %>
+*/</style>
