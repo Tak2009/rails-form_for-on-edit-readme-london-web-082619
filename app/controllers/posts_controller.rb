@@ -37,7 +37,7 @@ class PostsController < ApplicationController
 
 	# def update
 	#   @post = Post.find(params[:id])
-	#   @post.update(title: params[:post][:title], description: params[:post][:description])
+	#   @post.update(title: params[:post][:title], description: params[:post][:description]) # For の場合は nested hashでデータをかえしてくるため[:post]が必要になってくる。Createと比較してみるとよくわかる
 	# #   byebug
 	#   redirect_to post_path(@post)
 	# end
